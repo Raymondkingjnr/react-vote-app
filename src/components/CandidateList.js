@@ -3,7 +3,7 @@ import { useFetchProjects } from "../components/FetchCandidates";
 import { Link } from "react-router-dom";
 
 const CandidateList = () => {
-  const { loading, candidates, updateVoteCount } = useFetchProjects();
+  const { loading, candidates } = useFetchProjects();
 
   if (loading) {
     return <h1>Loading...</h1>;
